@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>artistas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Roboto Condensed', sans-serif;
+        }
+        h2{
+            font-size: 2.2em;
+            line-height: 0.9; 
+            flex-grow: 1;
+        }
+        h3{
+            font-size: 1em;  }
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 200px)
+        }
+        .caja{
+            background: pink;
+            border-radius: 20px;
+        }
+        .c1{background: #00AFD7;}
+        .c4{background: #FFCD00;}
+        .c5{background: black;
+        color: white;}
+        .c1{grid-column: 2 span;}
+        .c2{grid-column: 3 span;}
+        .c3{grid-column: 3 span;}
+        .c4{grid-column: 2 span;}
+        .c5{grid-column: 2 span;}
+        .c6{grid-column: 3 span;}
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .c2 img{
+            object-position: top right;
+        }
+        .c3 img{
+            object-position: center;
+        }
+        .c1, .c4, .c5{
+            display: flex;
+            flex-direction: column;
+            padding: 1.3em 2.3em;
+               }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja c1">
+            <h2>Elecciones</h2>
+            <h3>Flavita Banana</h3>
+        </div>
+        <div class="caja c2">
+         <img src="img/flavita%20banana%202.jpg" alt=""></div>
+        <div class="caja c3">
+        <img src="img/polina%20bright%202.jpg" alt=""></div>
+        <div class="caja c4">
+            <h2>Barn Swallow</h2>
+            <h3>Polina Bright</h3>
+        </div>
+        <div class="caja c5">
+           <h2>Ghost</h2>
+           <h3>Carlieyed</h3></div>
+        <div class="caja c6"><img src="img/carlieyed.jpg" alt=""></div>
+    </div>
+</body>
+</html>
